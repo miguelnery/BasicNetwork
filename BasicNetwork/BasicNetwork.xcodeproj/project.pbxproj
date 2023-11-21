@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1231BA4A2B0D3B9F00BB168C /* DecoderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1231BA492B0D3B9F00BB168C /* DecoderService.swift */; };
+		1231BA4C2B0D3BBC00BB168C /* DefaultDecoderServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1231BA4B2B0D3BBC00BB168C /* DefaultDecoderServiceTests.swift */; };
+		1283DA202B0D455A00EC550B /* MockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1283DA1F2B0D455A00EC550B /* MockModel.swift */; };
 		129A708B2B0CFB24002FCCA5 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129A70882B0CFB23002FCCA5 /* Endpoint.swift */; };
 		129A708C2B0CFB24002FCCA5 /* URLSessionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129A70892B0CFB24002FCCA5 /* URLSessionService.swift */; };
 		129A708D2B0CFB24002FCCA5 /* URLSessionWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129A708A2B0CFB24002FCCA5 /* URLSessionWrapper.swift */; };
@@ -31,6 +34,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1231BA492B0D3B9F00BB168C /* DecoderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoderService.swift; sourceTree = "<group>"; };
+		1231BA4B2B0D3BBC00BB168C /* DefaultDecoderServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultDecoderServiceTests.swift; sourceTree = "<group>"; };
+		1283DA1F2B0D455A00EC550B /* MockModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockModel.swift; sourceTree = "<group>"; };
 		129A70882B0CFB23002FCCA5 /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		129A70892B0CFB24002FCCA5 /* URLSessionService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionService.swift; sourceTree = "<group>"; };
 		129A708A2B0CFB24002FCCA5 /* URLSessionWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionWrapper.swift; sourceTree = "<group>"; };
@@ -70,6 +76,7 @@
 				129A70972B0CFD21002FCCA5 /* URLSessionWrapperMock.swift */,
 				129A70982B0CFD21002FCCA5 /* EndpointFetcherMock.swift */,
 				129A70992B0CFD21002FCCA5 /* EndpointMock.swift */,
+				1283DA1F2B0D455A00EC550B /* MockModel.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -101,6 +108,7 @@
 				12FA7C982B0CF73A00A8DE76 /* BasicNetwork.h */,
 				12FA7C992B0CF73A00A8DE76 /* BasicNetwork.docc */,
 				129A708E2B0CFB54002FCCA5 /* ServiceError.swift */,
+				1231BA492B0D3B9F00BB168C /* DecoderService.swift */,
 			);
 			path = BasicNetwork;
 			sourceTree = "<group>";
@@ -110,6 +118,7 @@
 			children = (
 				129A70962B0CFD21002FCCA5 /* Mocks */,
 				129A709A2B0CFD21002FCCA5 /* URLSessionServiceTests.swift */,
+				1231BA4B2B0D3BBC00BB168C /* DefaultDecoderServiceTests.swift */,
 			);
 			path = BasicNetworkTests;
 			sourceTree = "<group>";
@@ -228,6 +237,7 @@
 				129A708C2B0CFB24002FCCA5 /* URLSessionService.swift in Sources */,
 				129A708B2B0CFB24002FCCA5 /* Endpoint.swift in Sources */,
 				129A708D2B0CFB24002FCCA5 /* URLSessionWrapper.swift in Sources */,
+				1231BA4A2B0D3B9F00BB168C /* DecoderService.swift in Sources */,
 				12FA7C9A2B0CF73A00A8DE76 /* BasicNetwork.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -237,8 +247,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				129A709C2B0CFD21002FCCA5 /* EndpointFetcherMock.swift in Sources */,
+				1283DA202B0D455A00EC550B /* MockModel.swift in Sources */,
 				129A709D2B0CFD21002FCCA5 /* EndpointMock.swift in Sources */,
 				129A709E2B0CFD21002FCCA5 /* URLSessionServiceTests.swift in Sources */,
+				1231BA4C2B0D3BBC00BB168C /* DefaultDecoderServiceTests.swift in Sources */,
 				129A709B2B0CFD21002FCCA5 /* URLSessionWrapperMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
