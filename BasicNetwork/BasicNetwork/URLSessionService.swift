@@ -3,7 +3,7 @@ import Foundation
 public final class URLSessionService<SessionWrapper: URLSessionWrapper> {
     private let urlSession: SessionWrapper
     
-    init(urlSession: SessionWrapper = DefaultURLSessionWrapper()) {
+    public init(urlSession: SessionWrapper = DefaultURLSessionWrapper()) {
         self.urlSession = urlSession
     }
 }
