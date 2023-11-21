@@ -7,9 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		129A708B2B0CFB24002FCCA5 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129A70882B0CFB23002FCCA5 /* Endpoint.swift */; };
+		129A708C2B0CFB24002FCCA5 /* URLSessionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129A70892B0CFB24002FCCA5 /* URLSessionService.swift */; };
+		129A708D2B0CFB24002FCCA5 /* URLSessionWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129A708A2B0CFB24002FCCA5 /* URLSessionWrapper.swift */; };
+		129A708F2B0CFB54002FCCA5 /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129A708E2B0CFB54002FCCA5 /* ServiceError.swift */; };
+		129A709B2B0CFD21002FCCA5 /* URLSessionWrapperMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129A70972B0CFD21002FCCA5 /* URLSessionWrapperMock.swift */; };
+		129A709C2B0CFD21002FCCA5 /* EndpointFetcherMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129A70982B0CFD21002FCCA5 /* EndpointFetcherMock.swift */; };
+		129A709D2B0CFD21002FCCA5 /* EndpointMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129A70992B0CFD21002FCCA5 /* EndpointMock.swift */; };
+		129A709E2B0CFD21002FCCA5 /* URLSessionServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129A709A2B0CFD21002FCCA5 /* URLSessionServiceTests.swift */; };
 		12FA7C9A2B0CF73A00A8DE76 /* BasicNetwork.docc in Sources */ = {isa = PBXBuildFile; fileRef = 12FA7C992B0CF73A00A8DE76 /* BasicNetwork.docc */; };
 		12FA7CA02B0CF73B00A8DE76 /* BasicNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12FA7C952B0CF73A00A8DE76 /* BasicNetwork.framework */; };
-		12FA7CA52B0CF73B00A8DE76 /* BasicNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FA7CA42B0CF73B00A8DE76 /* BasicNetworkTests.swift */; };
 		12FA7CA62B0CF73B00A8DE76 /* BasicNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = 12FA7C982B0CF73A00A8DE76 /* BasicNetwork.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -24,11 +31,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		129A70882B0CFB23002FCCA5 /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		129A70892B0CFB24002FCCA5 /* URLSessionService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionService.swift; sourceTree = "<group>"; };
+		129A708A2B0CFB24002FCCA5 /* URLSessionWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionWrapper.swift; sourceTree = "<group>"; };
+		129A708E2B0CFB54002FCCA5 /* ServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
+		129A70972B0CFD21002FCCA5 /* URLSessionWrapperMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionWrapperMock.swift; sourceTree = "<group>"; };
+		129A70982B0CFD21002FCCA5 /* EndpointFetcherMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointFetcherMock.swift; sourceTree = "<group>"; };
+		129A70992B0CFD21002FCCA5 /* EndpointMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointMock.swift; sourceTree = "<group>"; };
+		129A709A2B0CFD21002FCCA5 /* URLSessionServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionServiceTests.swift; sourceTree = "<group>"; };
 		12FA7C952B0CF73A00A8DE76 /* BasicNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BasicNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		12FA7C982B0CF73A00A8DE76 /* BasicNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasicNetwork.h; sourceTree = "<group>"; };
 		12FA7C992B0CF73A00A8DE76 /* BasicNetwork.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = BasicNetwork.docc; sourceTree = "<group>"; };
 		12FA7C9F2B0CF73A00A8DE76 /* BasicNetworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BasicNetworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		12FA7CA42B0CF73B00A8DE76 /* BasicNetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicNetworkTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +64,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		129A70962B0CFD21002FCCA5 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				129A70972B0CFD21002FCCA5 /* URLSessionWrapperMock.swift */,
+				129A70982B0CFD21002FCCA5 /* EndpointFetcherMock.swift */,
+				129A70992B0CFD21002FCCA5 /* EndpointMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		12FA7C8B2B0CF73A00A8DE76 = {
 			isa = PBXGroup;
 			children = (
@@ -71,8 +95,12 @@
 		12FA7C972B0CF73A00A8DE76 /* BasicNetwork */ = {
 			isa = PBXGroup;
 			children = (
+				129A70882B0CFB23002FCCA5 /* Endpoint.swift */,
+				129A70892B0CFB24002FCCA5 /* URLSessionService.swift */,
+				129A708A2B0CFB24002FCCA5 /* URLSessionWrapper.swift */,
 				12FA7C982B0CF73A00A8DE76 /* BasicNetwork.h */,
 				12FA7C992B0CF73A00A8DE76 /* BasicNetwork.docc */,
+				129A708E2B0CFB54002FCCA5 /* ServiceError.swift */,
 			);
 			path = BasicNetwork;
 			sourceTree = "<group>";
@@ -80,7 +108,8 @@
 		12FA7CA32B0CF73B00A8DE76 /* BasicNetworkTests */ = {
 			isa = PBXGroup;
 			children = (
-				12FA7CA42B0CF73B00A8DE76 /* BasicNetworkTests.swift */,
+				129A70962B0CFD21002FCCA5 /* Mocks */,
+				129A709A2B0CFD21002FCCA5 /* URLSessionServiceTests.swift */,
 			);
 			path = BasicNetworkTests;
 			sourceTree = "<group>";
@@ -150,6 +179,7 @@
 					};
 					12FA7C9E2B0CF73A00A8DE76 = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 					};
 				};
 			};
@@ -194,6 +224,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				129A708F2B0CFB54002FCCA5 /* ServiceError.swift in Sources */,
+				129A708C2B0CFB24002FCCA5 /* URLSessionService.swift in Sources */,
+				129A708B2B0CFB24002FCCA5 /* Endpoint.swift in Sources */,
+				129A708D2B0CFB24002FCCA5 /* URLSessionWrapper.swift in Sources */,
 				12FA7C9A2B0CF73A00A8DE76 /* BasicNetwork.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -202,7 +236,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12FA7CA52B0CF73B00A8DE76 /* BasicNetworkTests.swift in Sources */,
+				129A709C2B0CFD21002FCCA5 /* EndpointFetcherMock.swift in Sources */,
+				129A709D2B0CFD21002FCCA5 /* EndpointMock.swift in Sources */,
+				129A709E2B0CFD21002FCCA5 /* URLSessionServiceTests.swift in Sources */,
+				129A709B2B0CFD21002FCCA5 /* URLSessionWrapperMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,13 +431,21 @@
 		12FA7CAD2B0CF73B00A8DE76 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = hehe.BasicNetworkTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -409,9 +454,16 @@
 		12FA7CAE2B0CF73B00A8DE76 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = hehe.BasicNetworkTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
